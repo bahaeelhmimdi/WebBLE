@@ -10,7 +10,7 @@ pool:
   vmImage: 'macos-latest'
 
 steps:
-- task: Xcode
+- task: Xcode@4
   inputs:
     actions: 'build'
     scheme: ''
