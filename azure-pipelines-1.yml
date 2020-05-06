@@ -11,14 +11,13 @@ pool:
 
 variables:
   scheme: ''
-  sdk: 'iphoneos'
   configuration: 'Release'
 
 steps:
 - task: Xcode@5
   inputs:
-    sdk: '$(sdk)'
-    xcWorkspacePath: 'projectname.xcworkspace' 
+    sdk: 'iphoneos'
+    xcWorkspacePath: '' 
     configuration: '$(configuration)'
     xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
